@@ -3,10 +3,10 @@ on:
   push:
 jobs:
   hello:
-    runs-on:
+    runs-on: ubuntu latest
       steps:
         - name: checkout code
-          uses: actions/chechout@v4
+          uses: actions/checkout@v4
         - name: print current working directory
           run: pwd
         - name: print hello
