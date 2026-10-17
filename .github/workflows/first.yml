@@ -1,0 +1,18 @@
+name: workflows
+on:
+  push:
+jobs:
+  hello:
+    runs-on:
+      steps:
+        - name: checkout code
+          uses: actions/chechout@v4
+        - name: print current working directory
+          run: pwd
+        - name: print hello
+          run: echo hello
+        - name: list directory
+          run: ls -l
+
+
+
